@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - GDT-AJ (email-triage)</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:42rem;margin:3rem auto;padding:0 1rem;color:#1a1a1a}a{color:#1a56db}</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p>Applies to <strong>GDT-AJ (email-triage)</strong>, a personal tool used only by its developer on the developer's own Google account. Last updated: 14 November 2026.</p>
+
+<h2>Data accessed</h2>
+<p>With the developer's consent the tool uses these Gmail API scopes: <code>gmail.readonly</code> (read messages) and <code>gmail.compose</code> (create drafts). The same Google Cloud project also declares <code>gmail.modify</code> for other personal scripts of the developer that act only on the developer's own mailbox.</p>
+
+<h2>How data is used</h2>
+<ul>
+<li>Message headers and text are read to assign each message a category (for example newsletter, invoice, enquiry).</li>
+<li>For some enquiries a draft reply is created in Gmail. The tool does not send email; a human reviews and sends every message.</li>
+<li>For classification and drafting, selected message text, after automated removal of personal identifiers, is sent to a language-model API (Anthropic). Messages that concern legal matters are not sent to the model at all.</li>
+<li>Locally the tool stores only statistics: a hash of the message id, the category, timing and the sender's domain. It does not store message content.</li>
+</ul>
+
+<h2>Sharing and retention</h2>
+<p>Data is not sold, not used for advertising, and not shared with anyone other than the model API provider described above, solely to perform the functions listed. No person other than the account owner reads the data. Local statistics can be deleted at any time by deleting the metrics file.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Revoking access and contact</h2>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Questions: open an issue in this repository.</p>
+
+<hr>
+<p lang="pl"><strong>PL (skrót):</strong> narzędzie osobiste, jeden użytkownik. Odczytuje własną pocztę Gmail (zakresy <code>gmail.readonly</code> i <code>gmail.compose</code>), kategoryzuje wiadomości i tworzy szkice odpowiedzi; niczego nie wysyła samo. Wybrany tekst wiadomości, po automatycznym usunięciu danych osobowych, trafia do API modelu językowego (Anthropic); wiadomości dotyczące spraw prawnych nie są do niego wysyłane. Lokalnie zapisywane są tylko statystyki (skrót identyfikatora, kategoria, czasy, domena nadawcy), bez treści. Dane nie są sprzedawane ani używane do reklam.</p>
+</body>
+</html>
